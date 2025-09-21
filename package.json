@@ -6,8 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "postbuild": "node -e \"require('fs').copyFileSync('dist/index.html','dist/404.html')\"",
+    "preview": "vite preview",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "predeploy:gh": "vite build",
+    "deploy:gh": "gh-pages -d dist -b gh-pages -t true"
   },
   "dependencies": {
     "react": "^19.1.1",

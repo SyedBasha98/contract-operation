@@ -3,6 +3,17 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+
+  "homepage": "https://syedbasha98.github.io/contract-operation/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SyedBasha98/contract-operation.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SyedBasha98/contract-operation/issues"
+  },
+  "author": "Syed Basha",
+
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -12,6 +23,7 @@
     "predeploy:gh": "vite build",
     "deploy:gh": "gh-pages -d dist -b gh-pages -t true"
   },
+
   "dependencies": {
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
